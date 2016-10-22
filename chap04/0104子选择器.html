@@ -2,15 +2,19 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>内嵌式/标记样式</title>
+	<title>子选择器</title>
 	<style type="text/css">
-		p{
-			color: red;
-			font-size: 50px;
+		/*只对下一层有影响*/
+		div > span{
+			color: pink;
 		}
 	</style>
 </head>
 <body>
-	<p>内嵌式</p>
+	<div>
+		<span>儿子
+		</span>
+		<p><span>孙子</span></p>
+	</div>
 </body>
 </html>

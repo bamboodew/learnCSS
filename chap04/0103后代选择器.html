@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>后代选择器</title>
+	<style type="text/css">
+		span {
+			color: blue;
+		}
+		
+		p span {
+			color: red;  /*p标签中的span（后代）特殊设置*/
+		}
+	</style>
+</head>
+<body>
+	<div>一代
+		<p>二代
+			<span>三代
+			</span>
+		</p>
+	</div>
+	<br>
+	<span>一层一代</span>
+	<br>
+	<span>也是一层一代</span>
+	<br>
+</body>
+</html>

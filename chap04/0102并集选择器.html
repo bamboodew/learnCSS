@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>并集选择器</title>
+	<style type="text/css">
+		p{
+			font-size: 30px;  /*内嵌式*/
+		}
+		
+		p.c{
+			text-decoration: underline;  /*交集选择器：继承共同的样式，再增加新的样式。*/
+		}
+		
+		.c{
+			color: blue;  /*类别选择器*/
+		}
+		
+		p,h1,.c,#d1{
+			background-color: gray;  /*并集选择器*/
+		}
+	</style>
+</head>
+<body>
+	<p id="p1">p1</p>
+	<p id="p2">p2</p>
+	<p id="p3" class="c">p3</p>
+	<h1 id="h1" class="c">h1</h1>
+	<h2 id="h2">h2</h2>
+	<div id="d1">d1</div>
+</body>
+</html>

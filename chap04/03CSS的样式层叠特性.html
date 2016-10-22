@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>CSS的样式层叠特性</title>
+	<style type="text/css">
+		p{color: blue;}   /*标记选择器*/
+		#p3{color: green;}  /*id选择器*/
+		.red{color: red;}  /*类别选择器*/		
+	</style>
+</head>
+<body>
+	<p>第一行</p>
+	<p class="red">第二行</p>
+	<p id="p3" class="red">第三行</p>
+	<p style="color: orange;" id="p3" class="red">第四行</p>
+	<!-- 样式层叠冲突：行内>id>内别>标记 -->
+</body>
+</html>
