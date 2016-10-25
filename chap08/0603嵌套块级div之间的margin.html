@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>嵌套块级div之间的margin</title>
+	<style type="text/css">
+
+		}
+	</style>
+</head>
+<body>
+	<h1>块级元素</h1>
+	<div style="margin: 10px;">块级元素1   <!-- 不能被子块继承 -->
+		<div style="margin-top:20px;">块级元素2</div>   <!-- 子块的margin以父块的内容content为参考 -->
+	</div>
+	<div>块级元素3</div>
+</body>
+</html>
